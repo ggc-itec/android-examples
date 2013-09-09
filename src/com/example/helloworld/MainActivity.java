@@ -16,6 +16,9 @@ import android.widget.Button;
 
 public class MainActivity extends Activity {
 
+	private Button button_basics;
+	private Button button_intents;
+	
 	private Button button1;
 	private Button button2;
 	private Button button3;
@@ -35,6 +38,12 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.activity_main);
 		context = this;
 		MyOnClickListener listener = new MyOnClickListener();
+		
+		button_basics = (Button) findViewById(R.id.button_basics);
+		button_basics.setOnClickListener(listener);
+		button_intents = (Button) findViewById(R.id.button_intents);
+		button_intents.setOnClickListener(listener);
+		
 		button1 = (Button) findViewById(R.id.button1);
 		button1.setOnClickListener(listener);
 		button2 = (Button) findViewById(R.id.button2);
@@ -69,6 +78,15 @@ public class MainActivity extends Activity {
 	public class MyOnClickListener implements View.OnClickListener {
 		@Override
 		public void onClick(View arg0) {
+			if(arg0.getId() == R.id.button_basics) {
+				Intent intent = new Intent(getApplicationContext(), BasicsActivity.class);
+				startActivity(intent);
+			}
+			if(arg0.getId() == R.id.button_intents) {
+				Intent intent = new Intent(getApplicationContext(), IntentActivity.class);
+				startActivity(intent);
+			}
+			
 			if (arg0.getId() == R.id.button1) {
 				Intent intent = new Intent(context, ToastActivity.class);
 				startActivity(intent);
