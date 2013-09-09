@@ -34,6 +34,7 @@ public class StudentListActivity extends ListActivity {
 		Cursor cursor = database.queryAll();
 		startManagingCursor(cursor);
 
+		//reference http://thinkandroid.wordpress.com/2010/01/09/simplecursoradapters-and-listviews/
 		String[] from = new String[] { StudentDatabase.KEY_NAME,
 				StudentDatabase.KEY_SSN };
 		int[] to = new int[] { R.id.rowtext, R.id.rowtext2 };

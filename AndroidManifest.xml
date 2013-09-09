@@ -5,8 +5,8 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="17"
-        android:targetSdkVersion="17" />
+        android:minSdkVersion="11"
+        android:targetSdkVersion="11" />
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -29,7 +29,11 @@
             android:label="CheckBox Activity" >
         </activity>
         <activity
-            android:name="com.example.helloworld.CatActivity"
+            android:name="com.example.helloworld.WebActivity"
+            android:label="Web Activity" >
+        </activity>
+        <activity
+            android:name="com.example.helloworld.ToastActivity"
             android:label="Cat Activity" >
         </activity>
         <activity

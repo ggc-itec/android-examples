@@ -70,7 +70,7 @@ public class MainActivity extends Activity {
 		@Override
 		public void onClick(View arg0) {
 			if (arg0.getId() == R.id.button1) {
-				Intent intent = new Intent(context, CatActivity.class);
+				Intent intent = new Intent(context, ToastActivity.class);
 				startActivity(intent);
 			} else if (arg0.getId() == R.id.button2) {
 				startActivity(new Intent(context, PreferenceActivity.class));

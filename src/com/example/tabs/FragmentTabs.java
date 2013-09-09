@@ -8,7 +8,7 @@ import android.content.Context;
 import android.os.Bundle;
 import android.widget.Toast;
 
-import com.example.helloworld.CatActivity;
+import com.example.helloworld.ToastActivity;
 
 /**
  * This demonstrates the use of action bar tabs and how they interact

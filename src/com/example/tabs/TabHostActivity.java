@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.widget.TabHost;
 import android.widget.TabHost.TabSpec;
 
-import com.example.helloworld.CatActivity;
+import com.example.helloworld.ToastActivity;
 import com.example.helloworld.R;
 
 /*
@@ -22,7 +22,7 @@ public class TabHostActivity extends Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		intent = new Intent().setClass(this, CatActivity.class);
+		intent = new Intent().setClass(this, ToastActivity.class);
 		setContentView(R.layout.activity_tabhost);
 		tabHost = (TabHost) findViewById(R.id.tabHost);
 		tabHost.setup();
