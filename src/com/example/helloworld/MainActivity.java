@@ -1,6 +1,7 @@
 package com.example.helloworld;
 
 import com.example.customview.CustomViewActivity;
+import com.example.intent_extras.UserDataEntryActivity;
 import com.example.multitouch.TouchActivity;
 import com.example.sqlite.StudentListActivity;
 import com.example.tabs.FragmentTabs;
@@ -18,6 +19,7 @@ public class MainActivity extends Activity {
 
 	private Button button_basics;
 	private Button button_intents;
+	private Button button_intents2;
 	
 	private Button button1;
 	private Button button2;
@@ -43,6 +45,9 @@ public class MainActivity extends Activity {
 		button_basics.setOnClickListener(listener);
 		button_intents = (Button) findViewById(R.id.button_intents);
 		button_intents.setOnClickListener(listener);
+		button_intents2 = (Button) findViewById(R.id.button_intents2);
+		button_intents2.setOnClickListener(listener);
+		
 		
 		button1 = (Button) findViewById(R.id.button1);
 		button1.setOnClickListener(listener);
@@ -84,6 +89,10 @@ public class MainActivity extends Activity {
 			}
 			if(arg0.getId() == R.id.button_intents) {
 				Intent intent = new Intent(getApplicationContext(), IntentActivity.class);
+				startActivity(intent);
+			}
+			if(arg0.getId() == R.id.button_intents2) {
+				Intent intent = new Intent(getApplicationContext(), UserDataEntryActivity.class);
 				startActivity(intent);
 			}
 			

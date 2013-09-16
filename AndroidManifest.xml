@@ -76,6 +76,14 @@
             android:name="com.example.helloworld.IntentOtherActivity"
             android:label="@string/title_activity_intent_other" >
         </activity>
+        <activity
+            android:name="com.example.intent_extras.UserDataEntryActivity"
+            android:label="@string/title_activity_user_data_entry" >
+        </activity>
+        <activity
+            android:name="com.example.intent_extras.UserDataShowActivity"
+            android:label="@string/title_activity_user_data_show" >
+        </activity>
     </application>
 
 </manifest>

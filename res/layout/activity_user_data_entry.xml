@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+	>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+		android:layout_centerHorizontal="true"
+        android:text="Who are you Grizzly?"
+		android:textSize="30dp"
+		android:textStyle="bold|italic"
+	 />
+
+	<RelativeLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerInParent="true"
+	    android:padding="10dp"
+	    android:background="#8800ff00"
+	    >
+		<TextView 
+			android:id="@+id/textview_username"
+			android:text="Your name? "
+			android:textSize="20dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingTop="5dp"
+			/>
+		<EditText 
+			android:id="@+id/edittext_username"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_toRightOf="@+id/textview_username" 
+			android:layout_alignBaseline="@+id/textview_username"
+			android:layout_marginLeft="5dp"
+			/>
+		<TextView 
+			android:id="@+id/textview_user_age"
+			android:text="Your age? "
+			android:textSize="20dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingTop="15dp"
+			android:layout_below="@+id/textview_username"
+			/>
+		<EditText 
+			android:id="@+id/edittext_user_age"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_toRightOf="@+id/textview_user_age" 
+			android:layout_alignBaseline="@+id/textview_user_age"
+			android:layout_marginLeft="5dp"
+			android:inputType="number"
+			/>	
+		<Button 
+			android:id="@+id/button_enter"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/textview_user_age"
+			android:layout_alignParentLeft="true"
+			android:layout_marginLeft="10dp"
+			android:layout_marginTop="30dp"
+			android:text="Enter" 
+			android:layout_centerInParent="true"
+		/>
+	
+	</RelativeLayout>
+	
+</RelativeLayout>

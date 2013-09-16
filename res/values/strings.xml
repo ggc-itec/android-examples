@@ -10,5 +10,7 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_intent">IntentActivity</string>
     <string name="title_activity_intent_other">IntentOtherActivity</string>
+    <string name="title_activity_user_data_entry">UserDataEntryActivity</string>
+    <string name="title_activity_user_data_show">UserDataShowActivity</string>
 
 </resources>
