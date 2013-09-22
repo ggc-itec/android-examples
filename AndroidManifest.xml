@@ -84,6 +84,16 @@
             android:name="com.example.intent_extras.UserDataShowActivity"
             android:label="@string/title_activity_user_data_show" >
         </activity>
+        <activity
+            android:name="com.example.service.ServiceActivity"
+            android:label="@string/title_activity_service" >
+        </activity>
+
+        <service
+            android:name="com.example.service.CountingService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
     </application>
 
 </manifest>

@@ -12,5 +12,6 @@
     <string name="title_activity_intent_other">IntentOtherActivity</string>
     <string name="title_activity_user_data_entry">UserDataEntryActivity</string>
     <string name="title_activity_user_data_show">UserDataShowActivity</string>
+    <string name="title_activity_service">ServiceActivity</string>
 
 </resources>

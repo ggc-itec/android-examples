@@ -3,6 +3,7 @@ package com.example.helloworld;
 import com.example.customview.CustomViewActivity;
 import com.example.intent_extras.UserDataEntryActivity;
 import com.example.multitouch.TouchActivity;
+import com.example.service.ServiceActivity;
 import com.example.sqlite.StudentListActivity;
 import com.example.tabs.FragmentTabs;
 import com.example.tabs.TabHostActivity;
@@ -20,6 +21,8 @@ public class MainActivity extends Activity {
 	private Button button_basics;
 	private Button button_intents;
 	private Button button_intents2;
+	
+	private Button button_service; 
 	
 	private Button button1;
 	private Button button2;
@@ -48,6 +51,8 @@ public class MainActivity extends Activity {
 		button_intents2 = (Button) findViewById(R.id.button_intents2);
 		button_intents2.setOnClickListener(listener);
 		
+		button_service = (Button) findViewById(R.id.button_service);
+		button_service.setOnClickListener(listener);
 		
 		button1 = (Button) findViewById(R.id.button1);
 		button1.setOnClickListener(listener);
@@ -95,7 +100,10 @@ public class MainActivity extends Activity {
 				Intent intent = new Intent(getApplicationContext(), UserDataEntryActivity.class);
 				startActivity(intent);
 			}
-			
+			if(arg0.getId() == R.id.button_service) {
+				Intent intent = new Intent(getApplicationContext(), ServiceActivity.class);
+				startActivity(intent);
+			}
 			if (arg0.getId() == R.id.button1) {
 				Intent intent = new Intent(context, ToastActivity.class);
 				startActivity(intent);
