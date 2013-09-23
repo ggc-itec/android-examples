@@ -1,5 +1,6 @@
 package com.example.helloworld;
 
+import com.example.broadcastreceiver.ReceiverActivity;
 import com.example.customview.CustomViewActivity;
 import com.example.intent_extras.UserDataEntryActivity;
 import com.example.multitouch.TouchActivity;
@@ -10,6 +11,7 @@ import com.example.tabs.TabHostActivity;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.app.ActivityManager.RecentTaskInfo;
 import android.content.Context;
 import android.content.Intent;
 import android.view.Menu;
@@ -23,6 +25,7 @@ public class MainActivity extends Activity {
 	private Button button_intents2;
 	
 	private Button button_service; 
+	private Button button_receiver;
 	
 	private Button button1;
 	private Button button2;
@@ -53,6 +56,8 @@ public class MainActivity extends Activity {
 		
 		button_service = (Button) findViewById(R.id.button_service);
 		button_service.setOnClickListener(listener);
+		button_receiver = (Button) findViewById(R.id.button_receiver);
+		button_receiver.setOnClickListener(listener);
 		
 		button1 = (Button) findViewById(R.id.button1);
 		button1.setOnClickListener(listener);
@@ -102,6 +107,10 @@ public class MainActivity extends Activity {
 			}
 			if(arg0.getId() == R.id.button_service) {
 				Intent intent = new Intent(getApplicationContext(), ServiceActivity.class);
+				startActivity(intent);
+			}
+			if(arg0.getId() == R.id.button_receiver) {
+				Intent intent = new Intent(getApplicationContext(), ReceiverActivity.class);
 				startActivity(intent);
 			}
 			if (arg0.getId() == R.id.button1) {

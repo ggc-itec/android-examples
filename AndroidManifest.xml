@@ -94,6 +94,21 @@
             android:enabled="true"
             android:exported="true" >
         </service>
+
+        <receiver
+            android:name="com.example.broadcastreceiver.MyBroadCastReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.example.broadcastreceiver.ReceiverActivity"
+            android:label="@string/title_activity_receiver" >
+        </activity>
     </application>
 
 </manifest>
